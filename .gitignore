@@ -7,3 +7,5 @@ typeDefs.txt
 yarn.lock
 .DS_Store
 node_modules
+.cache
+.env
