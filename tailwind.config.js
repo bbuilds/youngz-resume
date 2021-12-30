@@ -1,5 +1,5 @@
 const settingsScreens = require("./tailwind.settings.screens");
-const settingsFontSizes = require("./tailwind.settings.fontSizes");
+const settingsFontSizes = require("./tailwind.settings.fontsizes");
 
 module.exports = {
   content: ["./src/**/*.html", "./src/**/*.css", "./src/**/*.js"],

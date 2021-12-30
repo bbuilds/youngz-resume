@@ -32,6 +32,10 @@ const Hero = () => {
                   `<br><span class=${dollar}>A passionate, hard working, "full stack" developer, devOps tinkerer, technical SEO researcher, and overall web enthusiast.</span>`
                 )
                 .pauseFor(500)
+                .typeString(
+                  `I enjoy leading, teaching, and learning on these topics.`
+                )
+                .pauseFor(500)
                 .typeString(`<br><span class=${dollar}>🧪 🔨 🚀 </span>`)
                 .start();
             }}
