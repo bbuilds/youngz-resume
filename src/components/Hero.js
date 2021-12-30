@@ -33,7 +33,7 @@ const Hero = () => {
                 )
                 .pauseFor(500)
                 .typeString(
-                  `I enjoy leading, teaching, and learning on these topics.`
+                  `<br><span class=${dollar}>I enjoy leading, teaching, and learning on these topics.</span>`
                 )
                 .pauseFor(500)
                 .typeString(`<br><span class=${dollar}>🧪 🔨 🚀 </span>`)
