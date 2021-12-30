@@ -1,7 +1,14 @@
+require("dotenv").config();
+
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "youngz-resume",
+    name: "Branden Youngs",
+    description:
+      "Fullstack / Jamstack Developer, DevOps tinkerer, Technical SEO Researcher, and overall web enthusiast forever surfing the cosmic waves.",
+    keywords: ["React", "Gatsby", "JavaScript", "TypeScript"],
+    siteUrl: "https://brandeny.me",
+    siteImage: "https://brandeny.me/images/need-an-open-image.jpg",
+    lang: `en`,
   },
   plugins: [
     "gatsby-plugin-image",

@@ -1,0 +1,11 @@
+.fancy-heading:before {
+  content: "→";
+  color: var(--teal);
+  margin-right: 8px;
+}
+
+.fancy-heading:after {
+  content: "()";
+  color: var(--teal);
+  margin-left: 4px;
+}

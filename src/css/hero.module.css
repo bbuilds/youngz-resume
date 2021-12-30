@@ -1,0 +1,4 @@
+.dollar::before {
+  content: "$ ";
+  @apply text-byTeal opacity-50;
+}
