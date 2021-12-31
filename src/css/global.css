@@ -57,6 +57,10 @@ a:hover {
   @apply transition ease-in-out duration-300 text-byTeal;
 }
 
+p {
+  @apply mb-4 leading-relaxed;
+}
+
 .animated {
   transition: all 0.3s ease-in-out;
 }

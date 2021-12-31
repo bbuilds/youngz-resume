@@ -1,12 +1,17 @@
 import * as React from "react";
 import Typewriter from "typewriter-effect";
-import { dollar } from "../css/hero.module.css";
+import { dollar, hero } from "../css/hero.module.css";
 import { StaticImage } from "gatsby-plugin-image";
+import cn from "classnames";
+
 const Hero = () => {
   return (
     <section
       id="hero"
-      className="flex items-center justify-center py-10 container lg:py-20"
+      className={cn(
+        "flex items-center justify-center py-10 container lg:py-20",
+        hero
+      )}
     >
       <h1 className="sr-only">Branden Youngs Online Resume</h1>
       <div className="hidden lg:block md:w-1/3 p-8">
@@ -29,7 +34,7 @@ const Hero = () => {
                 )
                 .pauseFor(500)
                 .typeString(
-                  `<br><span class=${dollar}>A passionate, hard working, "full stack" developer, devOps tinkerer, technical SEO researcher, and overall web enthusiast.</span>`
+                  `<br><span class=${dollar}>A "full stack" developer, devOps tinkerer, technical SEO researcher, and overall web enthusiast.</span>`
                 )
                 .pauseFor(500)
                 .typeString(

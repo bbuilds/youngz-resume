@@ -1,0 +1,32 @@
+[
+  {
+    "position": "Director / Lead Developer",
+    "company": "Branden Builds LLC",
+    "date": "2015 - Present",
+    "description": "<p>Contract work with digital agencies, marketing agencies, and larger enterprise corporations to provide solutions to technical challenges their clients or internal teams may have.  These contracts bring a wide variety of work from single-page web applications and static site generated sites using modern front-end Frameworks, CMS and Headless CMS development, API creation, internal technical SEO tools, and scalable/secure MVC systems. I can play a role in content discovery, user research, user interface design, development, or a little bit of all the above! My favorite technologies to work with are JavaScript, Node.js, React, Vue, Typescript, GraphQL, Docker, PHP/Laravel, MySQL, Mongo, Svelte, Next.js, Gatsby.js, and more!</p><p>Consulting work, specifically with digital agencies looking to build and structure their web development team. Providing training and webinars to agencies and technology groups on newer technologies like headless CMS solutions, emerging modern JS frameworks, and setting up developer operations for continuous deployments.</p>"
+  },
+  {
+    "position": "Lead Developer",
+    "company": "Mockingbird",
+    "date": "Dec 2017 - Apr 2021",
+    "description": "<p>Started off as a web developer that built custom products for legal and political clients. The majority of these products were custom built from the ground up WordPress Solutions. Each product was built using the latest technology, passed ADA compliance, and optimized for site speed. I created an internal theme built on Sage Theme that used Laravel's MVC framework methodology, TailwindCSS, and WebPack.</p><p>I built an entire Branding + Strategy product/service including pricing, training of sales + delivery, and internal process documents. This product added a few new income streams yearly for clients struggling with their brand and market positioning. We also used this process internally to rebrand Mockingbird.</p><p>Later, I stepped into a leadership and director role where I managed a small group of developers, designers, and account managers. We revamped the internal process for technical SEO roadmaps and processes, reconstructed the pricing and internal process for web development projects, and more than doubled our income stream from web projects. </p>"
+  },
+  {
+    "position": "Lead Developer",
+    "company": "Techgrayscale",
+    "date": "Sept 2015 - Aug 2017",
+    "description": "<p>Strategically planning and launching web projects in their full cycle. This planning started with helping project discovery by figuring out their vision to provide to their audience. Conducting user-research to to define their target audience based around their business goals and market niche. Working closely with designers to help design the project solution around the users and the content provided. I complete the last step of the cycle and build the project on the web.</p>"
+  },
+  {
+    "position": "Frontend Developer",
+    "company": "Red Chalk Studios",
+    "date": "Apr 2014 - Apr 2015",
+    "description": "<p>Combined creativity, user experience, and development to build beautifully crafted websites that  brought out the best in a company's online presence.</p>"
+  },
+  {
+    "position": "Tech Support - Developer",
+    "company": "InMotion Hosting",
+    "date": "Apr 2011 - Nov 2013",
+    "description": "<p>Designed and developed website solutions for clients from scratch. This included creating solutions for static, WordPress, and eCommerce sites. Maintenance on previous websites. Created support documents and videos for InMotion Support Forums. Responsible for setting up and customizing Linux servers.</p>"
+  }
+]

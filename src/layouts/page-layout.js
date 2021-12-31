@@ -8,7 +8,7 @@ const PageLayout = ({ children }) => {
     <AppWrapper>
       <Header />
       <Nav />
-      <main className="md:ml-48 p-10">{children}</main>
+      <main className="md:ml-48 py-4 px-2 lg:p-10">{children}</main>
     </AppWrapper>
   );
 };

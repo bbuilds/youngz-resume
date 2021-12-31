@@ -2,3 +2,7 @@
   content: "$ ";
   @apply text-byTeal opacity-50;
 }
+
+.hero {
+  min-height: 400px;
+}
