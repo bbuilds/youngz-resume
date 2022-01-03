@@ -42,7 +42,7 @@ const Hero = () => {
                 )
                 .pauseFor(500)
                 .typeString(
-                  `<br><span class=${dollar}>&#x1F338; &#x1F33B; &#x1F337; <span class="text-byTeal">#livelaughlove</span> &#x1F338; &#x1F33B; &#x1F337;</span>`
+                  `<br><span class=${dollar}>Let's build some digital expierences together.</span>`
                 )
                 .start();
             }}
