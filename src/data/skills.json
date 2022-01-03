@@ -1,0 +1,42 @@
+[
+  {
+    "icon": "FaCss3",
+    "name": "Web Design & Development",
+    "tech": "HTML/CSS/Javascript"
+  },
+  {
+    "icon": "FaReact",
+    "name": "Frontend Javascript Frameworks",
+    "tech": "React/Vue/Svelte"
+  },
+  {
+    "icon": "FaNodeJs", 
+    "name": "Backend Javascript Frameworks",
+    "tech": "Node.js/Express.js/Mongoose"
+  },
+  {
+    "icon": "FaLaravel",
+    "name": "Backend PHP Frameworks",
+    "tech": "Laravel/Symfony"
+  },
+  {
+    "icon": "FaWordpress", 
+    "name": "CMS Develoment",
+    "tech": "WordPress/Craft"
+  },
+  {
+    "icon": "FaJsSquare", 
+    "name": "JAMstack / Headless Development",
+    "tech": "Gatsby/Next/Nuxt/Static Site"
+  },
+  {
+    "icon": "FaSearchengin", 
+    "name": "Search Engine Optimization",
+    "tech": "PageRank/Backlinks/Google Analytics"
+  },
+  {
+    "icon": "FaRocket",
+    "name": "Branding",
+    "tech": "Strategy/Identity/Storytelling"
+  }
+]

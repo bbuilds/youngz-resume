@@ -3,7 +3,6 @@ import { useAppContext } from "../context/AppContext";
 
 export default function MenuToggle() {
   const { mobileMenuState, toggleMenuState } = useAppContext();
-  console.log("mobileMenuState", mobileMenuState);
   return (
     <button
       aria-label="Show / hide nav items"

@@ -33,10 +33,6 @@ const WorkItem = ({ position, date, company, description }) => {
       // custom formula just happens to work
       Math.round(workExpRef.current.clientHeight / 10 + 5)
     );
-
-    console.table({
-      numberOfIcons: workExpRef.current.clientHeight / 10 + 5,
-    });
   }, [isDescriptionExpanded, workExpRef]);
   return (
     <div

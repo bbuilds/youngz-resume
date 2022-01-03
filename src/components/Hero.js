@@ -9,7 +9,7 @@ const Hero = () => {
     <section
       id="hero"
       className={cn(
-        "flex items-center justify-center py-10 container lg:py-20",
+        "flex items-center justify-center py-10 max-w-6xl mx-auto lg:py-20",
         hero
       )}
     >

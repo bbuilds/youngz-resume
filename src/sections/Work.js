@@ -33,7 +33,7 @@ const WorkSection = () => {
                   company={item.company}
                   date={item.date}
                   description={item.description}
-                  id={item.id}
+                  key={item.id}
                   position={item.position}
                 />
               );
