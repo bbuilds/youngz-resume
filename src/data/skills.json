@@ -2,16 +2,16 @@
   {
     "icon": "FaCss3",
     "name": "Web Design & Development",
-    "tech": "HTML/CSS/Javascript"
+    "tech": "HTML/CSS/JavaScript"
   },
   {
     "icon": "FaReact",
-    "name": "Frontend Javascript Frameworks",
+    "name": "Frontend JavaScript Frameworks",
     "tech": "React/Vue/Svelte"
   },
   {
     "icon": "FaNodeJs", 
-    "name": "Backend Javascript Frameworks",
+    "name": "Backend JavaScript Frameworks",
     "tech": "Node.js/Express.js/Mongoose"
   },
   {

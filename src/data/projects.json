@@ -1,0 +1,28 @@
+[
+  {
+    "image": "../images/projects/wa-state-democrats-screenshot.jpg",
+    "title": "Washington State Democrats",
+    "description":
+      "A custom built WordPress website levarging Facebook and Twitter APIs.",
+    "tags": ["WordPress", "REST", "tailwindcss"],
+    "website": "https://www.wa-democrats.org/",
+    "github": ""
+  },
+  {
+    "image": "../images/projects/enercare-screenshot.jpg",
+    "title": "Enercare",
+    "description": "A custom built WordPress website using Gutenberg blocks.",
+    "tags": ["WordPress", "React", "Gutenberg"],
+    "website": "https://www.enercare.ca/",
+    "github": ""
+  },
+  {
+    "image": "../images/projects/byoungz-screenshot.jpg",
+    "title": "Byoungz",
+    "description":
+      "My headless WordPress blog on shadow work and travel tips built with Gatsby",
+    "tags": ["Gatsby", "WordPress", "JAMstack", "Tailwind"],
+    "website": "https://byoungz.com/",
+    "github": "https://github.com/bbuilds/byoungz-gatsby-headlesswp"
+  }
+]

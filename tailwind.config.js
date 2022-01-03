@@ -6,6 +6,19 @@ module.exports = {
   theme: {
     container: {
       center: true,
+      padding: {
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "0",
+        xl: "0",
+        "2xl": "0",
+      },
+      screens: {
+        sm: "100%",
+        md: "100%",
+        lg: "1280px",
+        xl: "1536px",
+      },
     },
     screens: settingsScreens,
     fontSize: settingsFontSizes,

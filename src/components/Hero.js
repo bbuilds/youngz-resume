@@ -30,7 +30,7 @@ const Hero = () => {
               typewriter
                 .changeDelay(50)
                 .typeString(
-                  `<span class=${dollar}>Greetings 👋, I'm Branden Youngs</span>`
+                  `<span class=${dollar}>Greetings &#x1F44B;, I'm Branden Youngs</span>`
                 )
                 .pauseFor(500)
                 .typeString(
@@ -41,7 +41,9 @@ const Hero = () => {
                   `<br><span class=${dollar}>I enjoy leading, teaching, and learning on these topics.</span>`
                 )
                 .pauseFor(500)
-                .typeString(`<br><span class=${dollar}>🧪 🔨 🚀 </span>`)
+                .typeString(
+                  `<br><span class=${dollar}>&#x1F338; &#x1F33B; &#x1F337; <span class="text-byTeal">#livelaughlove</span> &#x1F338; &#x1F33B; &#x1F337;</span>`
+                )
                 .start();
             }}
           />

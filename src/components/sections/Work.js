@@ -1,12 +1,12 @@
 import * as React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 
-import Heading from "../components/Heading";
-import WorkItem from "../components/WorkItem";
+import Heading from "../Heading";
+import WorkItem from "../WorkItem";
 
 const WorkSection = () => {
   const data = useStaticQuery(graphql`
-    query ExperiencQuery {
+    query ExperienceQuery {
       allExperienceJson {
         nodes {
           company

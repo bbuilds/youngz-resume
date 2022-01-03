@@ -1,7 +1,7 @@
 import * as React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import * as FontAwesome from "react-icons/fa";
-import Heading from "../components/Heading";
+import Heading from "../Heading";
 
 const Skills = () => {
   const data = useStaticQuery(graphql`
@@ -20,7 +20,7 @@ const Skills = () => {
   `);
 
   return (
-    <section id="skills">
+    <section id="skills" className="py-10">
       <div className="container">
         <Heading headinglevel={2}>Skills</Heading>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-6 xl:grid-cols-4">
