@@ -119,7 +119,7 @@ const Featured = () => {
             rel="noopener noreferrer"
             className="button"
           >
-            View More Code Samples On Github
+            View More Projects On Github
           </a>
         </div>
       </div>

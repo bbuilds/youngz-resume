@@ -1,16 +1,16 @@
 const fetch = require("node-fetch");
 const { createRemoteFileNode } = require("gatsby-source-filesystem");
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 // https://www.gatsbyjs.com/docs/how-to/images-and-media/preprocessing-external-images/
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
   createTypes(`
         type BbuildsBlogPosts implements Node {
           featuredImg: File @link(from: "fields.localFile")
-        }
-  
-        type FeaturedImg {
-          thumbnailImgUrl: String
         }
       `);
 };
@@ -26,7 +26,6 @@ exports.onCreateNode = async ({
     node.internal.type === "BbuildsBlogPosts" &&
     node.featuredImageURL !== null
   ) {
-    console.log("node.featuredImageURL", node.featuredImageURL);
     const fileNode = await createRemoteFileNode({
       url: node.featuredImageURL, // string that points to the URL of the image
       parentNodeId: node.id, // id of the parent node of the fileNode you are going to create
@@ -50,7 +49,7 @@ exports.sourceNodes = async ({
 
   // Download data from a remote API.
   const blogPostsResponse = await fetch(
-    `https://www.brandenbuilds.com/api/posts`
+    `${process.env.SECRET_BLOG_POSTS_URL}/api/posts`
   );
 
   const data = await blogPostsResponse.json();
@@ -69,9 +68,10 @@ exports.sourceNodes = async ({
         title: post.title,
         tags: post.tags,
         date: post.date,
-        featuredImageURL: `https://www.brandenbuilds.com${post.featuredImage}`,
+        featuredImageURL: `${process.env.SECRET_BLOG_POSTS_URL}${post.featuredImage}`,
         excerpt: post.excerpt,
         slug: post.slug,
+        url: `${process.env.SECRET_BLOG_POSTS_URL}/${post.slug}`,
       })
     );
   }
