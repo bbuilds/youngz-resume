@@ -22,7 +22,7 @@ const WorkSection = () => {
   const experienceItems = data.allExperienceJson.nodes;
 
   return (
-    <section id="experience">
+    <section id="experience" className="py-10 lg:py-20">
       <div className="container">
         <Heading headinglevel={2}>Experience</Heading>
         <div className="flex flex-wrap">

@@ -20,7 +20,7 @@ const Skills = () => {
   `);
 
   return (
-    <section id="skills" className="py-10">
+    <section id="skills" className="py-10 lg:py-20">
       <div className="container">
         <Heading headinglevel={2}>Skills</Heading>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-6 xl:grid-cols-4">

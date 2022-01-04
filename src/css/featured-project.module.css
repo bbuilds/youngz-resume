@@ -1,0 +1,24 @@
+.featured-project:nth-of-type(odd) {
+  @apply lg:text-right;
+}
+
+.featured-project:nth-of-type(odd) .project-tech-list,
+.featured-project:nth-of-type(odd) .project-links {
+  @apply lg:justify-end;
+}
+
+.featured-project:nth-of-type(odd) .project-content {
+  @apply lg:-translate-x-12;
+}
+
+.featured-project:nth-of-type(odd) .project-image {
+  @apply lg:pl-12;
+}
+
+.featured-project:nth-of-type(even) .project-content {
+  @apply lg:order-1 lg:translate-x-12;
+}
+
+.featured-project:nth-of-type(even) .project-image {
+  @apply lg:order-2 lg:pr-12;
+}

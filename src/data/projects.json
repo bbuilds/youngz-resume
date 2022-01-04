@@ -17,6 +17,15 @@
     "github": ""
   },
   {
+    "image": "../images/projects/bbuilds-website-screenshot.jpg",
+    "title": "Branden Builds",
+    "description":
+      "My developer blog and freelance website that is statically generated.",
+    "tags": ["NextJS", "MDX", "JAMstack", "Tailwind"],
+    "website": "https://www.brandenbuilds.com/",
+    "github": "https://github.com/bbuilds/brandenbuilds-website-nextjs"
+  },
+  {
     "image": "../images/projects/byoungz-screenshot.jpg",
     "title": "Byoungz",
     "description":
