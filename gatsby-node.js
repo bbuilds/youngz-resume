@@ -5,41 +5,6 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
-// https://www.gatsbyjs.com/docs/how-to/images-and-media/preprocessing-external-images/
-exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes } = actions;
-  createTypes(`
-        type BbuildsBlogPosts implements Node {
-          featuredImg: File @link(from: "fields.localFile")
-        }
-      `);
-};
-
-exports.onCreateNode = async ({
-  node,
-  actions: { createNode, createNodeField },
-  createNodeId,
-  getCache,
-}) => {
-  // For all BbuildsBlogPosts nodes that have a featured image url, call createRemoteFileNode
-  if (
-    node.internal.type === "BbuildsBlogPosts" &&
-    node.featuredImageURL !== null
-  ) {
-    const fileNode = await createRemoteFileNode({
-      url: node.featuredImageURL, // string that points to the URL of the image
-      parentNodeId: node.id, // id of the parent node of the fileNode you are going to create
-      createNode, // helper function in gatsby-node to generate the node
-      createNodeId, // helper function in gatsby-node to generate the node id
-      getCache,
-    });
-    // if the file was created, extend the node with "localFile"
-    if (fileNode) {
-      createNodeField({ node, name: "localFile", value: fileNode.id });
-    }
-  }
-};
-
 exports.sourceNodes = async ({
   actions,
   createNodeId,
@@ -61,14 +26,14 @@ exports.sourceNodes = async ({
         parent: null,
         children: [],
         internal: {
-          type: `BbuildsBlogPosts`,
+          type: `BlogPosts`,
           content: JSON.stringify(post),
           contentDigest: createContentDigest(post),
         },
         title: post.title,
         tags: post.tags,
         date: post.date,
-        featuredImageURL: `${process.env.SECRET_BLOG_POSTS_URL}${post.featuredImage}`,
+        featuredImageUrl: `${process.env.SECRET_BLOG_POSTS_URL}${post.featuredImage}`,
         excerpt: post.excerpt,
         slug: post.slug,
         url: `${process.env.SECRET_BLOG_POSTS_URL}/${post.slug}`,
@@ -77,4 +42,35 @@ exports.sourceNodes = async ({
   }
 
   return;
+};
+
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions;
+  createTypes(`
+    type BlogPosts implements Node {
+      coverImg: File @link(from: "fields.localFile")
+    }
+  `);
+};
+
+exports.onCreateNode = async ({
+  node,
+  actions: { createNode, createNodeField },
+  createNodeId,
+  getCache,
+}) => {
+  // For all BlogPosts nodes that have a featured image url, call createRemoteFileNode
+  if (node.internal.type === "BlogPosts" && node.featuredImgUrl !== null) {
+    const fileNode = await createRemoteFileNode({
+      url: node.featuredImageUrl, // string that points to the URL of the image
+      parentNodeId: node.id, // id of the parent node of the fileNode you are going to create
+      createNode, // helper function in gatsby-node to generate the node
+      createNodeId, // helper function in gatsby-node to generate the node id
+      getCache,
+    });
+    // if the file was created, extend the node with "localFile"
+    if (fileNode) {
+      createNodeField({ node, name: "localFile", value: fileNode.id });
+    }
+  }
 };
