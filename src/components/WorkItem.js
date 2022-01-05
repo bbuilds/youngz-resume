@@ -1,7 +1,6 @@
 import * as React from "react";
 import { BiGitPullRequest } from "react-icons/bi";
 import { CgGitCommit } from "react-icons/cg";
-import cn from "classnames";
 
 const GitTrails = ({ numberOfIcons }) => {
   return (
@@ -36,9 +35,9 @@ const WorkItem = ({ position, date, company, description }) => {
   }, [isDescriptionExpanded, workExpRef]);
   return (
     <div
-      className={cn(
+      className={
         "relative flex flex-col items-start justify-center w-full h-full pl-10 pr-4 overflow-hidden mb-8 lg:w-1/2 lg:mb-12"
-      )}
+      }
       ref={workExpRef}
     >
       <BiGitPullRequest className="absolute top-0 left-0 h-auto w-7 opacity-75" />

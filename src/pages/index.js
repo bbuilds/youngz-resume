@@ -5,16 +5,20 @@ import WorkSection from "../components/sections/Work";
 import Skills from "../components/sections/Skills";
 import Featured from "../components/sections/Featured";
 import BlogPosts from "../components/sections/BlogPosts";
+import Seo from "../components/Seo";
 
 const IndexPage = () => {
   return (
-    <PageLayout>
-      <Hero />
-      <WorkSection />
-      <Skills />
-      <Featured />
-      <BlogPosts />
-    </PageLayout>
+    <>
+      <Seo />
+      <PageLayout>
+        <Hero />
+        <WorkSection />
+        <Skills />
+        <Featured />
+        <BlogPosts />
+      </PageLayout>
+    </>
   );
 };
 

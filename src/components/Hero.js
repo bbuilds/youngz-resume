@@ -2,16 +2,12 @@ import * as React from "react";
 import Typewriter from "typewriter-effect";
 import { dollar, hero } from "../css/hero.module.css";
 import { StaticImage } from "gatsby-plugin-image";
-import cn from "classnames";
 
 const Hero = () => {
   return (
     <section
       id="hero"
-      className={cn(
-        "flex items-center justify-center py-10 max-w-6xl mx-auto",
-        hero
-      )}
+      className={`${hero} flex items-center justify-center py-10 max-w-6xl mx-auto`}
     >
       <h1 className="sr-only">Branden Youngs Online Resume</h1>
       <div className="hidden lg:block md:w-1/3 p-8">

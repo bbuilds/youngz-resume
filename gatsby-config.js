@@ -2,12 +2,14 @@ require("dotenv").config();
 
 module.exports = {
   siteMetadata: {
-    name: "Branden Youngs",
+    title: "Branden's Resume on the Web",
+    attentionMessage: "Bye forever!",
     description:
-      "Fullstack / Jamstack Developer, DevOps tinkerer, Technical SEO Researcher, and overall web enthusiast forever surfing the cosmic waves.",
+      "Fullstack / Jamstack Developer, DevOps tinkerer, Technical SEO Researcher, and overall web enthusiast.",
     keywords: ["React", "Gatsby", "JavaScript", "TypeScript"],
     siteUrl: "https://brandeny.me",
-    siteImage: "https://brandeny.me/images/need-an-open-image.jpg",
+    siteImage: "/og.png",
+    twitterUsername: "@brandenbuilds",
     lang: `en`,
   },
   plugins: [
