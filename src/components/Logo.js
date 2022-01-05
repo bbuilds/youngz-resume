@@ -1,11 +1,8 @@
 import * as React from "react";
-import { Link } from "gatsby";
 
 const Logo = ({ classes }) => {
   return (
-    <Link
-      to="/"
-      title="Branden Youngs Resume Website"
+    <div
       className={
         "flex items-center text-white" + (classes ? " " + classes : "")
       }
@@ -55,7 +52,7 @@ const Logo = ({ classes }) => {
       </svg>
 
       <span className="ml-1 leading-none">Branden Y.</span>
-    </Link>
+    </div>
   );
 };
 
