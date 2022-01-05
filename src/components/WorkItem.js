@@ -14,7 +14,7 @@ const GitTrails = ({ numberOfIcons }) => {
   );
 };
 
-const WorkItem = ({ position, date, company, description }) => {
+const WorkItem = ({ position, date, company, description, ...other }) => {
   const workExpRef = React.useRef(null);
   const [numbersOfIconsToRender, setnumbersOfIconsToRender] =
     React.useState(10);
@@ -39,6 +39,7 @@ const WorkItem = ({ position, date, company, description }) => {
         "relative flex flex-col items-start justify-center w-full h-full pl-10 pr-4 overflow-hidden mb-8 lg:w-1/2 lg:mb-12"
       }
       ref={workExpRef}
+      {...other}
     >
       <BiGitPullRequest className="absolute top-0 left-0 h-auto w-7 opacity-75" />
       <GitTrails numberOfIcons={numbersOfIconsToRender} />

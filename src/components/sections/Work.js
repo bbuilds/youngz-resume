@@ -35,6 +35,9 @@ const WorkSection = () => {
                   description={item.description}
                   key={item.id}
                   position={item.position}
+                  data-aos="fade-up"
+                  data-aos-anchor="#experience"
+                  data-aos-delay="200"
                 />
               );
             })}

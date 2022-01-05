@@ -73,6 +73,8 @@ const Nav = () => {
                     handleScroll(e, item.id);
                   }}
                   className="lowercase flex items-center animated text-byYellow hover:text-byTeal"
+                  data-aos="fade-right"
+                  data-aos-delay={`${index}00`}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

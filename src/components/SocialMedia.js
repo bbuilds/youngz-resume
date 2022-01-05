@@ -25,6 +25,8 @@ const SocialMedia = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block mx-2"
+            data-aos="fade-right"
+            data-aos-delay={`${index}00`}
           >
             <item.icon className="h-7 w-auto" />
             <span className="sr-only">{item.title}</span>
