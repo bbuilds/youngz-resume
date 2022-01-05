@@ -2,6 +2,7 @@ import * as React from "react";
 import Logo from "./Logo";
 import { Link } from "gatsby";
 import { useAppContext } from "../context/AppContext";
+import SocialMedia from "./SocialMedia";
 
 const navItems = [
   {
@@ -85,6 +86,7 @@ const Nav = () => {
             );
           })}
         </ul>
+        <SocialMedia />
       </nav>
       {mobileMenuState && (
         <div

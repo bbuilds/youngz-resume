@@ -70,5 +70,5 @@ p {
 }
 
 .button {
-  @apply bg-byBlack lowercase text-byYellow transition duration-300 ease-in-out py-2 px-4 border border-byYellow rounded hover:bg-byYellow  hover:text-byBlack;
+  @apply bg-byBlack lowercase text-byYellow transition duration-300 ease-in-out py-2 px-4 border border-byYellow rounded hover:bg-byYellow  hover:text-byBlack lg:py-4 lg:px-8;
 }
