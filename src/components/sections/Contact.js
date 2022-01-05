@@ -1,5 +1,8 @@
 import * as React from "react";
 import { useStaticQuery, graphql } from "gatsby";
+import { SiNotion } from "react-icons/si";
+import { FaFileDownload } from "react-icons/fa";
+
 import Heading from "../Heading";
 const Contact = () => {
   const data = useStaticQuery(graphql`
@@ -44,16 +47,22 @@ const Contact = () => {
           </div>
           <div className="w-full md:w-1/2">
             <p class="mb-0">Detailed Notion Resume:</p>
-            <a href={`${contactInfo.detailedResume}`}>
-              {contactInfo.detailedResume}
+            <a
+              className="flex items-center"
+              href={`${contactInfo.detailedResume}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SiNotion className="mr-2" /> Notion Resume
             </a>
             <p class="mb-0 mt-2">Minimal PDF Resume:</p>
             <a
+              className="flex items-center"
               href={`${contactInfo.pdfResume}`}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Download PDF Resume
+              <FaFileDownload className="mr-2" /> PDF Resume
             </a>
           </div>
         </div>
