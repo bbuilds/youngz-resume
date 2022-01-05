@@ -27,7 +27,7 @@ const BlogPosts = () => {
   `);
   const posts = data.allBlogPosts.nodes;
   return (
-    <section id="recent-posts" className="py-10 lg:py-20">
+    <section id="blog" className="py-10 lg:py-20">
       <div className="container">
         <Heading headinglevel={2}>Recent Posts</Heading>
         <p className="mb-10">

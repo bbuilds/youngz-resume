@@ -1,42 +1,47 @@
 import * as React from "react";
+import { scroller } from "react-scroll";
 import Logo from "./Logo";
-import { Link } from "gatsby";
 import { useAppContext } from "../context/AppContext";
 import SocialMedia from "./SocialMedia";
 
 const navItems = [
   {
-    title: "Home",
-    href: "#top",
+    title: "Top",
+    id: "top",
   },
   {
-    title: "About",
-    href: "#about-me",
-  },
-  {
-    title: "Work",
-    href: "#work",
+    title: "Experience",
+    id: "experience",
   },
   {
     title: "Skills",
-    href: "#skills",
+    id: "skills",
   },
   {
     title: "Projects",
-    href: "#projects",
+    id: "projects",
   },
   {
     title: "Blog",
-    href: "#blog",
+    id: "blog",
   },
   {
     title: "Contact",
-    href: "#contact",
+    id: "contact",
   },
 ];
 
 const Nav = () => {
   const { mobileMenuState, falseMenuState } = useAppContext();
+
+  const handleScroll = (e, id) => {
+    e.preventDefault();
+    scroller.scrollTo(id, {
+      duration: 1000,
+      delay: 50,
+      smooth: "easeInOutCubic",
+    });
+  };
 
   React.useEffect(() => {
     const handleTabletChange = (e) => {
@@ -63,7 +68,12 @@ const Nav = () => {
           {navItems.map((item, index) => {
             return (
               <li className="mb-4" key={index}>
-                <Link to={item.href} className="lowercase flex items-center">
+                <button
+                  onClick={(e) => {
+                    handleScroll(e, item.id);
+                  }}
+                  className="lowercase flex items-center animated text-byYellow hover:text-byTeal"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="66.217"
@@ -81,7 +91,7 @@ const Nav = () => {
                     />
                   </svg>
                   {item.title}
-                </Link>
+                </button>
               </li>
             );
           })}

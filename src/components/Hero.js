@@ -10,7 +10,7 @@ const Hero = () => {
       className={`${hero} flex items-center justify-center py-10 max-w-6xl mx-auto`}
     >
       <h1 className="sr-only">Branden Youngs Online Resume</h1>
-      <div className="hidden lg:block md:w-1/3 p-8">
+      <div className="hidden lg:block md:w-1/3 xl:p-8">
         <div className="image-wrapper flex justify-center items-center  overflow-hidden rounded-lg shadow">
           <StaticImage
             src="../images/branden-youngs-headshot.jpg"

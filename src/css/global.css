@@ -11,9 +11,9 @@
   --black: #292929;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 body {
   @apply font-courier leading-normal text-base bg-byBlack text-white;

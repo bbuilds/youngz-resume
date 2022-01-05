@@ -19,16 +19,16 @@ const Contact = () => {
     }
   `);
   const contactInfo = data.allDataJson.nodes[0];
-  console.log("contactInfo", contactInfo);
+
   return (
     <section id="contact" className="py-10 lg:py-20">
       <div className="max-w-5xl mx-auto px-4">
         <Heading headinglevel={2}>Get in Touch</Heading>
         <div className="flex flex-wrap md:flex-nowrap gap-4">
           <div className="w-full md:w-1/2">
-            <p class="mb-0">Email:</p>
+            <p className="mb-0">Email:</p>
             <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
-            <p class="mb-0 mt-2">Github:</p>
+            <p className="mb-0 mt-2">Github:</p>
             <a
               href={`${contactInfo.github}`}
               target="_blank"
@@ -36,7 +36,7 @@ const Contact = () => {
             >
               {contactInfo.github}
             </a>
-            <p class="mb-0 mt-2">Linkedin:</p>
+            <p className="mb-0 mt-2">Linkedin:</p>
             <a
               href={`${contactInfo.linkedin}`}
               target="_blank"
@@ -46,7 +46,7 @@ const Contact = () => {
             </a>
           </div>
           <div className="w-full md:w-1/2">
-            <p class="mb-0">Detailed Notion Resume:</p>
+            <p className="mb-0">Detailed Notion Resume:</p>
             <a
               className="flex items-center"
               href={`${contactInfo.detailedResume}`}
@@ -55,7 +55,7 @@ const Contact = () => {
             >
               <SiNotion className="mr-2" /> Notion Resume
             </a>
-            <p class="mb-0 mt-2">Minimal PDF Resume:</p>
+            <p className="mb-0 mt-2">Minimal PDF Resume:</p>
             <a
               className="flex items-center"
               href={`${contactInfo.pdfResume}`}
