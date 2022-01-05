@@ -6,7 +6,7 @@ import Skills from "../components/sections/Skills";
 import Featured from "../components/sections/Featured";
 import BlogPosts from "../components/sections/BlogPosts";
 import Seo from "../components/Seo";
-
+import Contact from "../components/sections/Contact";
 const IndexPage = () => {
   return (
     <>
@@ -17,6 +17,7 @@ const IndexPage = () => {
         <Skills />
         <Featured />
         <BlogPosts />
+        <Contact />
       </PageLayout>
     </>
   );
