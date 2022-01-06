@@ -2,6 +2,10 @@
   @apply lg:text-right;
 }
 
+.project-image [data-gatsby-image-wrapper] {
+  @apply opacity-75 lg:opacity-100 lg:shadow;
+}
+
 .featured-project:nth-of-type(odd) .project-tech-list,
 .featured-project:nth-of-type(odd) .project-links {
   @apply lg:justify-end;
@@ -11,14 +15,14 @@
   @apply lg:-translate-x-12;
 }
 
-.featured-project:nth-of-type(odd) .project-image {
+/* .featured-project:nth-of-type(odd) .project-image {
   @apply lg:pl-12;
-}
+} */
 
 .featured-project:nth-of-type(even) .project-content {
-  @apply lg:order-1 lg:translate-x-12;
+  @apply lg:order-1;
 }
 
 .featured-project:nth-of-type(even) .project-image {
-  @apply lg:order-2 lg:pr-12;
+  @apply lg:order-2 lg:-translate-x-12;
 }

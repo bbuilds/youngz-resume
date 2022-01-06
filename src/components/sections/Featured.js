@@ -49,9 +49,7 @@ const Featured = () => {
                 className={`${featuredProject} relative mb-12 flex flex-wrap flex-col lg:flex-row lg:flex-nowrap lg:items-center lg:mb-16`}
                 data-aos="fade-up"
               >
-                <div
-                  className={`${projectImage} opacity-75 lg:w-100 lg:opacity-100 lg:shadow`}
-                >
+                <div className={`${projectImage}`}>
                   <GatsbyImage image={image} alt={title} className="img" />
                 </div>
                 <div

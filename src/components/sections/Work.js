@@ -37,7 +37,7 @@ const WorkSection = () => {
                   position={item.position}
                   data-aos="fade-up"
                   data-aos-anchor="#experience"
-                  data-aos-delay="200"
+                  data-aos-delay="100"
                 />
               );
             })}
