@@ -72,7 +72,7 @@ const Nav = () => {
                   onClick={(e) => {
                     handleScroll(e, item.id);
                   }}
-                  className="lowercase flex items-center animated text-byYellow hover:text-byTeal"
+                  className="lowercase flex items-center animated text-byYellow lg:ml-auto hover:text-byTeal"
                   data-aos="fade-right"
                   data-aos-delay={`${index}00`}
                 >

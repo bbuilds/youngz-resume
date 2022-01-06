@@ -30,6 +30,9 @@ const Skills = () => {
               <div
                 key={node.id}
                 className="p-4 border border-zinc-600 flex items-center rounded-md"
+                data-aos="fade-right"
+                data-aos-anchor="#skills"
+                data-aos-delay={`${index}50`}
               >
                 {React.createElement(faIcon)}
                 <div className="pl-4">

@@ -16,7 +16,7 @@ const social = [
 
 const SocialMedia = () => {
   return (
-    <div className="flex items-center mt-6">
+    <div className="flex items-center mt-6 lg:justify-end">
       {social.map((item, index) => {
         return (
           <a

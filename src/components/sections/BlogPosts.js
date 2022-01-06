@@ -30,16 +30,21 @@ const BlogPosts = () => {
     <section id="blog" className="py-10 lg:py-20">
       <div className="container">
         <Heading headinglevel={2}>Recent Posts</Heading>
-        <p className="mb-10">
+        <p className="mb-10" data-aos="fade-up">
           These posts are pulled from my dev blog on my freelance website and
           are linked externally to them.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {posts.map((post) => {
+          {posts.map((post, index) => {
             const { title, tags, id, url, date, excerpt, coverImg } = post;
             const image = getImage(coverImg);
             return (
-              <div key={id} className="posts-grid__item">
+              <div
+                key={id}
+                className="posts-grid__item"
+                data-aos="fade-right"
+                data-aos-delay={`${index}50`}
+              >
                 <article className={`relative group`}>
                   <a
                     href={url}

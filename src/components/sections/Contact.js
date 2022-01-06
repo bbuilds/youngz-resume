@@ -25,7 +25,7 @@ const Contact = () => {
       <div className="max-w-5xl mx-auto px-4">
         <Heading headinglevel={2}>Get in Touch</Heading>
         <div className="flex flex-wrap md:flex-nowrap gap-4">
-          <div className="w-full md:w-1/2">
+          <div className="w-full md:w-1/2" data-aos="fade-right">
             <p className="mb-0">Email:</p>
             <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
             <p className="mb-0 mt-2">Github:</p>
@@ -45,7 +45,7 @@ const Contact = () => {
               {contactInfo.linkedin}
             </a>
           </div>
-          <div className="w-full md:w-1/2">
+          <div className="w-full md:w-1/2" data-aos="fade-left">
             <p className="mb-0">Detailed Notion Resume:</p>
             <a
               className="flex items-center"
