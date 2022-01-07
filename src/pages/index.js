@@ -1,4 +1,5 @@
 import * as React from "react";
+import AOS from "aos";
 import PageLayout from "../layouts/page-layout";
 import Hero from "../components/Hero";
 import WorkSection from "../components/sections/Work";
@@ -7,7 +8,14 @@ import Featured from "../components/sections/Featured";
 import BlogPosts from "../components/sections/BlogPosts";
 import Seo from "../components/Seo";
 import Contact from "../components/sections/Contact";
+import Footer from "../components/Footer";
+
 const IndexPage = () => {
+  React.useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+  }, []);
   return (
     <>
       <Seo />

@@ -1,17 +1,11 @@
 import * as React from "react";
 import { AppWrapper } from "../context/AppContext";
-import AOS from "aos";
+
 import Header from "../components/Header";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 
 const PageLayout = ({ children }) => {
-  React.useEffect(() => {
-    AOS.init({
-      once: true,
-    });
-  }, []);
-
   return (
     <AppWrapper>
       <Header />

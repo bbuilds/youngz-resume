@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <section id="footer">
       <div className="container text-xs leading-relaxed opacity-75 text-center">
-        <p data-aos="fade-up">
+        <p>
           Copyright &copy; {new Date().getFullYear()} Branden Youngs. Licensed
           under MIT.
         </p>
