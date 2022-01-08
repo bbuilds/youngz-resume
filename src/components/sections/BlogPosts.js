@@ -32,7 +32,7 @@ const BlogPosts = () => {
         <Heading headinglevel={2}>Recent Posts</Heading>
         <p className="mb-10" data-aos="fade-up">
           These posts are pulled from my{" "}
-          <a href="https://brandenbuilds.com/blog">developer blog</a>
+          <a href="https://brandenbuilds.com/blog"> developer blog</a>
           and are linked externally to them.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
