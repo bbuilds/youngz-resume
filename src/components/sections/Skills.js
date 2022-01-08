@@ -23,7 +23,7 @@ const Skills = () => {
     <section id="skills" className="py-10 lg:py-20">
       <div className="container">
         <Heading headinglevel={2}>Skills</Heading>
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-6 xl:grid-cols-4">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
           {data.allSkillsJson.edges.map(({ node }, index) => {
             const faIcon = FontAwesome[node.icon];
             return (

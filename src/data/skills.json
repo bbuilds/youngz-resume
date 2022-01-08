@@ -1,23 +1,13 @@
 [
   {
-    "icon": "FaCss3",
-    "name": "Web Design & Development",
-    "tech": "HTML/CSS/JavaScript"
-  },
-  {
     "icon": "FaReact",
-    "name": "Frontend JavaScript Frameworks",
-    "tech": "React/Vue/Svelte"
+    "name": "Frontend",
+    "tech": "React/CSS/Svelte"
   },
   {
     "icon": "FaNodeJs", 
-    "name": "Backend JavaScript Frameworks",
-    "tech": "Node.js/Express.js/Mongoose"
-  },
-  {
-    "icon": "FaLaravel",
-    "name": "Backend PHP Frameworks",
-    "tech": "Laravel/Symfony"
+    "name": "Backend",
+    "tech": "Node.js/Express.js/Lavarel"
   },
   {
     "icon": "FaWordpress", 
@@ -26,17 +16,17 @@
   },
   {
     "icon": "FaJsSquare", 
-    "name": "JAMstack / Headless Development",
-    "tech": "Gatsby/Next/Nuxt/Static Site"
+    "name": "JAMstack",
+    "tech": "Gatsby/Next/Headless"
   },
   {
     "icon": "FaSearchengin", 
     "name": "Search Engine Optimization",
-    "tech": "PageRank/Backlinks/Google Analytics"
+    "tech": "PageRank/Backlinks/Analytics"
   },
   {
     "icon": "FaRocket",
     "name": "Branding",
-    "tech": "Strategy/Identity/Storytelling"
+    "tech": "Positioning/Identity/Storytelling"
   }
 ]
