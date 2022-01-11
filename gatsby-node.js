@@ -74,3 +74,12 @@ exports.onCreateNode = async ({
     }
   }
 };
+
+exports.createPages = async ({ actions }) => {
+  const { createRedirect } = actions;
+
+  createRedirect({
+    fromPath: `/detailed-resume`,
+    toPath: `https://bbuilds.notion.site/Branden-Youngs-Resume-1375f9f4f87043eb93bd39b232fb8673`,
+  });
+};
