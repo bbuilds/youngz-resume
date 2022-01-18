@@ -8,7 +8,6 @@ import Featured from "../components/sections/Featured";
 import BlogPosts from "../components/sections/BlogPosts";
 import Seo from "../components/Seo";
 import Contact from "../components/sections/Contact";
-import Footer from "../components/Footer";
 
 const IndexPage = () => {
   React.useEffect(() => {

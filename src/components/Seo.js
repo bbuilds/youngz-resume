@@ -25,14 +25,20 @@ const Seo = (props) => {
   const defaults = data.site.siteMetadata;
   const title = props.title || defaults.title;
 
+  function changeTitle(e) {
+    if (isVisible) {
+      document.title = defaults.attentionMessage;
+    } else {
+      document.title = title;
+    }
+  }
+
   React.useEffect(() => {
-    document.addEventListener("visibilitychange", function (e) {
-      if (isVisible) {
-        document.title = defaults.attentionMessage;
-      } else {
-        document.title = title;
-      }
-    });
+    document.addEventListener("visibilitychange", changeTitle);
+
+    return () => {
+      document.removeEventListener("visibilitychange", changeTitle);
+    };
   }, [isVisible]); //eslint-disable-line react-hooks/exhaustive-deps
 
   if (defaults.siteUrl === "" && typeof window !== "undefined") {
