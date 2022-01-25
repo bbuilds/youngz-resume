@@ -29,11 +29,11 @@ const Hero = () => {
               typewriter
                 .changeDelay(50)
                 .typeString(
-                  `<span class=${dollar}>Greetings &#x1F44B;, I'm Branden Youngs</span>`
+                  `<span class=${dollar}>Greetings, I'm Branden Youngs</span>`
                 )
                 .pauseFor(500)
                 .typeString(
-                  `<br><span class=${dollar}>A "full stack" developer, devOps tinkerer, technical SEO researcher, and overall web enthusiast.</span>`
+                  `<br><span class=${dollar}>A whateverend developer, devOps tinkerer, technical SEO researcher, and overall web enthusiast.</span>`
                 )
                 .pauseFor(500)
                 .typeString(
