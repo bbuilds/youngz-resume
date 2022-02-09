@@ -23,7 +23,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="w-full lg:w-2/3 md:pl-10">
-        <div className="bg-black/50 p-8 rounded-lg shadow">
+        <div className="bg-black/50 p-8 rounded-lg shadow min-h-[15.rem]">
           <Typewriter
             onInit={(typewriter) => {
               typewriter
@@ -33,7 +33,7 @@ const Hero = () => {
                 )
                 .pauseFor(500)
                 .typeString(
-                  `<br><span class=${dollar}>A whateverend developer, devOps tinkerer, technical SEO researcher, and overall web enthusiast.</span>`
+                  `<br><span class=${dollar}>A curious developer, devOps tinkerer, technical SEO researcher, and overall web enthusiast.</span>`
                 )
                 .pauseFor(500)
                 .typeString(
